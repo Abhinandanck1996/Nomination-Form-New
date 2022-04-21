@@ -1,0 +1,75 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.spotifySec article {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: left;
+}
+.spotifySec form {
+  padding: 10px;
+  width: 550px;
+}
+.spo-grp input ::placeholder {
+  color: #ffffff;
+}
+.spo-grp input {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid rgb(136, 136, 4);
+  color: white;
+  padding: 14px;
+  margin: 10px 0;
+  border-radius: 3px;
+}
+.dob input {
+  margin: 5px;
+  width: 100%;
+  padding: 15px;
+}
+
+.authBlock .spo-group input::placeholder{
+    color: black;
+}
+.spo-robo {
+  border: 1px solid #d3d3d3;
+  width: 60%;
+  height: 15vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  color: black;
+  margin-top: 10px;
+  padding: 20px;
+}
+footer {
+  position: relative;
+  top: -10px;
+  font-size: 12px;
+}
+footer a {
+  color: green;
+  font-weight: 500;
+}
+.spo-button button {
+  padding: 16px 48px;
+  border-radius: 50px;
+  position: relative;
+  left: 33%;
+  background-color: #1ed760;
+  color: black;
+  border: none;
+  font-weight: bold;
+}
+.spo-button button:hover {
+  padding: 18px 50px;
+}
