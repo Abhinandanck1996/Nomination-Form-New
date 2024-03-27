@@ -1,0 +1,27 @@
+  let handleSubmit = e => {
+    e.preventDefault();
+  window.localStorage.setItem("empname", empname);
+    window.localStorage.setItem("empid", empid);
+    window.localStorage.setItem("empemail", empemail);
+    window.localStorage.setItem("nomname", nomname);
+    window.localStorage.setItem("nomid", nomid);
+    window.localStorage.setItem("omemail",nomemail);
+
+
+    setTimeout(() => {
+        window.localStorage.removeItem("empname");
+        window.localStorage.removeItem("empid");
+        window.localStorage.removeItem("empemail");
+        window.localStorage.removeItem("nomname");
+        window.localStorage.removeItem("nomid");
+        window.localStorage.removeItem("omemail");
+    }, 15000);
+};
+
+LocalStorage = () => {
+    console.log(empname);
+    console.log(empid);
+    console.log(nomname);
+    console.log(nomid);
+
+}

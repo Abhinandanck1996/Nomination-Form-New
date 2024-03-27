@@ -1,0 +1,99 @@
+#authBlock2 .main-content h1,
+#authBlock2 .main-nominee-text h1{
+    text-align: left;
+    width: 90% !important;
+    margin: auto;
+}
+#authBlock2 article .main-content,
+#authBlock2 article .main-nominee-text{
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+    height: 60px;
+    margin: auto;
+    background-color: #FDFDFD !important;
+    border-bottom: 3px solid #eee !important;
+}
+#authBlock2 article .main-nominee-text{
+    border-bottom: 20px solid #eee !important;
+}
+#authBlock2{
+    background-color: #F7F7F7 !important;
+}
+.counter-value{
+    margin-top: 10px !important;
+    width: 70% !important;
+    margin: auto;
+}
+.comment-value{
+    margin-top: 10px !important;
+    width: 70% !important;
+    margin: auto;
+}
+.comment-value p{
+    display: flex;
+}
+.counter-value span{
+    border: 3px solid #eee !important;
+    padding: 6px 20px 5px 6px !important;
+    border-radius: 5px !important;
+}
+.counter-value button{
+    padding: 10px 10px 4px 10px !important;
+    border: none !important;
+    border-radius: 5px !important;
+    color: #F7F7F7;
+}
+.counter-value button.plus{
+    background-color: #5CB85B;
+    margin: 4px !important;
+}
+.counter-value button.minus{
+    background-color:#D9534F;
+    margin: 2px !important;
+}
+.counter-value p{
+    font-size: 18px !important;
+}
+.counter-value .myteam{
+    background-color: #5BC0DE;
+    border: none !important;
+    padding: 8px 20px 5px 6px !important;
+    margin: 3px !important;
+}
+.counter-value .myteam input{
+    border: 3px solid #eee !important;
+}
+.counter-value .myteam label{
+    line-height: 2em !important;
+    font-size: 14px !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+}
+.comment-value textarea{
+    margin-left: 10px !important;
+    border: 3px solid #eee !important;
+}
+/* .authBlock2 article{
+height: 230px !important;
+} */
+.authBlock2 .form-group button{
+    padding: 20px;
+    width: auto;
+    display: block;
+    border: none;
+    color: #111;
+margin: auto;
+    font-weight: bold;
+    border-radius: 25px;
+    background-color: #1DE761;
+    cursor: pointer;
+}
+
+.authBlock2 .form-group button:hover{
+    background-color: crimson;
+    color: #fff;
+}
+.form-group-btn{
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}

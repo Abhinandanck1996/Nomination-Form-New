@@ -19,7 +19,7 @@
     color: black;
     text-transform: uppercase;
 }
-.authBlock .form-group {
+/* .authBlock .form-group {
 
    padding: 10px;
     width: 600px;
@@ -30,14 +30,14 @@
 .authBlock .form-group input{
     width: 100%;
     background-color: transparent;
-    border: 1px solid #ffc10742;
+    border: 1px solid #333 !important;
     color:black;
     padding: 20px;
     margin: 10px 0;
     border-radius: 3px;
 }
 .authBlock .form-group input::placeholder{
-    color: #1DE761;
+    color: #333;
 }
 .authBlock .form-group input:focus{
     background-color: gray;
@@ -54,26 +54,33 @@
     display: block;
     border: none;
     color: #111;
-position: relative;
-left: 40%;
+margin: auto;
     font-weight: bold;
     border-radius: 25px;
     background-color: #1DE761;
 }
-
+.authBlock .form-group textarea{
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #333 !important;
+    color:black;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 3px;
+}
 .authBlock .form-group button:hover{
     background-color: crimson;
     color: #fff;
-}
+} */
 
-.authBlock .form-group1 label{
+/* .authBlock .form-group1 label{
     font-weight: bold;
     color: black;
     float: left;
     
-}
+} */
 
-.authBlock .form-group input{
+/* .authBlock .form-group input{
     width: 100%;
     background-color: transparent;
     border: 1px solid #ffc10742;
@@ -81,7 +88,7 @@ left: 40%;
     padding: 20px;
     margin: 10px 0;
     border-radius: 3px;
-}
+} */
 select{
     width: 100%;
     padding: 20px;
@@ -203,7 +210,7 @@ h4{
 a:hover{
 transform: scale(1.2);
 }
-a{
+/* a{
     text-decoration: none;
     float: right;
     margin-right: 25px;
@@ -214,9 +221,9 @@ a{
     color: white;
     background-color: #ff9f00;
      transition: all 2s;
-}
+} */
 
-button {
+/* button {
     width: 5%;
     background-color: #1DE761;
     transition: all 2s;
@@ -224,4 +231,323 @@ button {
 }
 button:hover{
     background-color: gray;
+} */
+.authBlock1 .authTable td{
+   text-align: center;
+   /* border-width: thick; */
+   padding: 10px;
+
+}
+.authBlock1 #authTable{
+    border-collapse: collapse;
+}
+.authBlock1 #authTable thead td{
+    background-color: #333 !important;
+    color: #fff;
+}
+table, td, th {
+    border: 1px solid #D3D3D3;
+  }
+.authBlock1 .authTable thead{
+    font-weight: 900;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.authTable span{
+    opacity: 0.6;
+}
+.authBlock1 .form-group button{
+    padding: 20px;
+    width: 100%;
+    display: block;
+    border: none;
+    color: #111;
+margin: auto;
+    font-weight: bold;
+    border-radius: 25px;
+    background-color: #1DE761;
+    cursor: pointer;
+}
+.authBlock1 .form-group1 button{
+    padding: 20px;
+    width: 20%;
+    display: block;
+    border: none;
+    color: #111;
+margin: auto;
+    font-weight: bold;
+    border-radius: 25px;
+    background-color: #1DE761;
+    cursor: pointer;
+    float: left;
+    margin-top: 20px;
+}
+.authBlock .main-head{
+    height: 60px;
+    width: 100% !important;
+    background: #F474AC;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.authBlock .main-head h2{
+    font-family: Oswald;
+    font-size: 30px;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 700;
+}
+.authBlock{
+    background-color: #F2F1ED !important;
+}
+.authBlock .main-form-div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100% !important;
+}
+
+.authBlock .main-form-div1 .form-group input{
+    width: 92.5% !important;
+    margin: auto;
+}
+.authBlock .main-form-div .form-group label{
+    display: block;
+    padding-bottom: 15px;
+    margin: 15px 10px 0px 10px;
+}
+.authBlock form{
+    width: 100% !important;
+    margin: 15px 0px 15px 0px;
+}
+.authBlock .main-form-div .form-group{
+    width: 100% !important;
+}
+.authBlock .form-group textarea{
+    width: 98.5% !important;
+    margin: auto;
+}
+.authBlock .main-form-div .form-group input{
+    width: 95% !important;
+    margin: auto;
+}
+.authBlock .main-form-div .form-group input,
+.authBlock .form-group textarea{
+    border-style: solid !important;
+    border-color: rgba(244, 116, 172, 1.0);
+    border-top-width: 0px !important;
+    border-right-width: 0px !important;
+    border-bottom-width: 1px !important;
+    border-left-width: 0px !important;
+    -webkit-border-top-left-radius: 0px !important;
+    -moz-border-radius-topleft: 0px !important;
+    border-top-left-radius: 0px !important;
+    -webkit-border-top-right-radius: 0px !important;
+    -moz-border-radius-topright: 0px !important;
+    border-top-right-radius: 0px !important;
+    -webkit-border-bottom-right-radius: 0px !important;
+    -moz-border-radius-bottomright: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    -webkit-border-bottom-left-radius: 0px !important;
+    -moz-border-radius-bottomleft: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    padding: 10px 10px 10px 10px;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 16px;
+    color: #595959;
+    -webkit-text-fill-color: #595959;
+    font-style: normal;
+    font-weight: 400;
+    align-items: center;
+    display: flex;
+    -webkit-box-shadow: rgba(225, 225, 225, 1.0) 0px 0px 0px 0px !important;
+    box-shadow: rgba(225, 225, 225, 1.0) 0px 0px 0px 0px !important;
+    background-color:rgba(225, 225, 225, 0.7) !important ;
+}
+.authBlock .main-form-div .form-group input[type=text]:focus,
+.authBlock .main-form-div .form-group input[type=email]:focus,
+.authBlock .form-group select:focus,
+.authBlock .form-group textarea:focus{
+    outline: none;
+    text-decoration: none !important;
+    border-color: rgba(244, 116, 172, 1.0);
+    border-top-width: 0px !important;
+    border-right-width: 0px !important;
+    border-bottom-width: 1px !important;
+    border-left-width: 0px !important;
+    text-decoration: underline;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+}
+
+.authBlock .main-form-div .form-group label span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: #0A5461;
+    font-style: normal;
+    font-weight: 400;
+}
+.authBlock .form-group label {
+    display: block;
+    padding-bottom: 15px;
+    margin: 15px 10px 0px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: #0A5461;
+    font-style: normal;
+    font-weight: 400;
+}
+.authBlock .form-group select{
+    border-style: solid !important;
+    border-color: rgba(244, 116, 172, 1.0);
+    border-top-width: 0px !important;
+    border-right-width: 0px !important;
+    border-bottom-width: 1px !important;
+    border-left-width: 0px !important;
+    -webkit-border-top-left-radius: 0px !important;
+    -moz-border-radius-topleft: 0px !important;
+    border-top-left-radius: 0px !important;
+    -webkit-border-top-right-radius: 0px !important;
+    -moz-border-radius-topright: 0px !important;
+    border-top-right-radius: 0px !important;
+    -webkit-border-bottom-right-radius: 0px !important;
+    -moz-border-radius-bottomright: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    -webkit-border-bottom-left-radius: 0px !important;
+    -moz-border-radius-bottomleft: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    padding: 10px 10px 10px 10px;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 16px;
+    color: #595959;
+    -webkit-text-fill-color: #595959;
+    font-style: normal;
+    font-weight: 400;
+    align-items: center;
+    display: flex;
+    -webkit-box-shadow: rgba(225, 225, 225, 1.0) 0px 0px 0px 0px !important;
+    box-shadow: rgba(225, 225, 225, 1.0) 0px 0px 0px 0px !important;
+    background-color:rgba(225, 225, 225, 0.7) !important ;
+    padding: 20px !important;
+    width: 98.5% !important;
+    margin: auto !important;
+}
+#Education{
+    color:#F474AC !important;
+}
+.authBlock .form-group button{
+    padding: 25px 50px 25px 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #FFFFFF !important;
+    font-style: normal;
+    background-image: none;
+    background-color: #F474AC !important;
+    font-weight: 400;
+    border-style: solid !important;
+    border-color: rgba(244, 116, 172, 1.0);
+    border-top-width: 0px !important;
+    border-right-width: 0px !important;
+    border-bottom-width: 1px !important;
+    border-left-width: 0px !important;
+    cursor: pointer;  
+}
+.authBlock .form-group button{
+    border: 0px solid #fff;
+    padding: 1em 2em;
+    min-width: 200px;
+    min-height: 50px;
+    background: none;
+    position: relative;
+    cursor: pointer;
+    box-shadow: inset -2px 1px 11px rgba(0,0,0,0.5);
+}
+
+.authBlock .form-group button a {
+    color: #fff;
+    text-decoration: none;
+    font-size: large;
+    text-transform: uppercase;
+}
+
+.authBlock .form-group button svg {
+    position: absolute;
+    inset: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-width: 5px;
+    stroke-dasharray: 33 297;
+    stroke-dashoffset: 50;
+    transition: all 0.5s linear;
+}
+
+.authBlock .form-group button:hover {
+    background-color: #04b7e9;
+    box-shadow: none;
+}
+
+.authBlock .form-group button:hover svg {
+    stroke-width: 3px;
+    stroke-dashoffset: -500;
+}
+
+.authBlock .form-group button:active {
+    transform: scale(1.001);
+    background-color: #02a7d4;
+}
+.authBlock .form-group-btn{
+    display: flex;
+    justify-content: center;
+    margin: 20px 10px 20px 10px;
+}
+
+.form-group10 input,
+.form-group11 input{
+    display: none !important;
+  }
+  .form-group10{
+    width: 50%;
+    margin: 2em 0em !important;
+  }
+  .form-group11{
+    float: right;
+  }
+  .authBlock .main-form-div1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  .form-group10 label,
+  .form-group11 label {
+    width: 200px;
+    height: 45px;
+    background: #F474AC !important;
+    color: #ffffff !important;
+    font-size: 15px !important;
+    text-transform: capitalize;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px !important;
+  }
+  .formSubInfoText{
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 13px !important;
+    color: #638D96 !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+  }
+.json-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.authBlock1 article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }

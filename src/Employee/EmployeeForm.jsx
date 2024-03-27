@@ -6,6 +6,10 @@ export default class EmployeeForm extends Component {
     this.state = {
       Emp_name: "",
       Emp_ID: "",
+      Emp_email: "",
+      Nom_name: "",
+      Nom_ID: "",
+      Nom_email: "",
       Emp_Sal: "",
       Emp_Des: "",
       Emp_edu: "",
@@ -14,8 +18,7 @@ export default class EmployeeForm extends Component {
       Emp_skills: "",
       Emp_comp: "",
       Emp_dob: "",
-      Emp_num: "",
-      Emp_email: "",
+      Emp_num: ""
     };
   }
 
@@ -27,6 +30,10 @@ export default class EmployeeForm extends Component {
     console.log(this.state);
    window.localStorage.setItem("Emp_name", this.state.Emp_name);
     window.localStorage.setItem("Emp_ID", this.state.Emp_ID);
+    window.localStorage.setItem("Emp_email", this.state.Emp_email);
+    window.localStorage.setItem("Emp_name", this.state.Nom_name);
+    window.localStorage.setItem("Emp_ID", this.state.Nom_ID);
+    window.localStorage.setItem("Nom_email", this.state.Nom_email);
     window.localStorage.setItem("Emp_Sal", this.state.Emp_Sal);
     window.localStorage.setItem("Emp_Des", this.state.Emp_Des);
     window.localStorage.setItem("Emp_edu", this.state.Emp_edu);
@@ -36,10 +43,14 @@ export default class EmployeeForm extends Component {
     window.localStorage.setItem("Emp_comp", this.state.Emp_comp);
      window.localStorage.setItem("Emp_dob", this.state.Emp_dob);
     window.localStorage.setItem("Emp_num", this.state.Emp_num);
-     window.localStorage.setItem("Emp_email", this.state.Emp_email);
+  
    setTimeout(() => {
      window.localStorage.removeItem("Emp_name");
      window.localStorage.removeItem("Emp_ID");
+     window.localStorage.removeItem("Emp_email");
+     window.localStorage.removeItem("Nom_name");
+     window.localStorage.removeItem("Nom_ID");
+     window.localStorage.removeItem("Nom_email");
      window.localStorage.removeItem("Emp_Sal");
      window.localStorage.removeItem("Emp_Des");
      window.localStorage.removeItem("Emp_edu");
@@ -49,7 +60,6 @@ export default class EmployeeForm extends Component {
      window.localStorage.removeItem("Emp_comp");
      window.localStorage.removeItem("Emp_dob");
      window.localStorage.removeItem("Emp_num");
-      window.localStorage.removeItem("Emp_email");
     
    }, 15000);
   };
@@ -57,6 +67,8 @@ export default class EmployeeForm extends Component {
     this.setState({
       Emp_name:window.localStorage.getItem("Emp_name"),
       Emp_ID:window.localStorage.getItem("Emp_ID"),
+      Emp_name:window.localStorage.getItem("Nom_name"),
+      Emp_ID:window.localStorage.getItem("Nom_ID"),
      Emp_Sal:window.localStorage.getItem("Emp_Sal"),
      Emp_Des:window.localStorage.getItem("Emp_Des"),
    })
@@ -68,8 +80,12 @@ export default class EmployeeForm extends Component {
   LocalStorage = () => {
     console.log(this.state.Emp_name);
     console.log(this.state.Emp_ID);
+    console.log(this.state.Nom_name);
+    console.log(this.state.Nom_ID);
     console.log(this.state.Emp_Sal);
     console.log(this.state.Emp_Des);
+
+  
   }
 
   render() {
@@ -79,7 +95,7 @@ export default class EmployeeForm extends Component {
           <h2>Employee Register Form</h2>
           <form onSubmit={this.handleSubmit}>
             <div className="form-group">
-              <label htmlFor="name">Employee Name</label>
+              <label htmlFor="name">Nominatior Name</label>
               <input
                 type="text"
                 id="name"
@@ -90,7 +106,7 @@ export default class EmployeeForm extends Component {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="ID">Employee ID</label>
+              <label htmlFor="ID">Nominatior ID</label>
               <input
                 type="text"
                 id="ID"
@@ -98,6 +114,52 @@ export default class EmployeeForm extends Component {
                 placeholder="enter ID"
                 onChange={this.handleChange}
                 value={this.state.Emp_ID}
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="email">Email Id</label>
+              <input
+                type="email"
+                id="email"
+                name="Emp_email"
+                placeholder="enter email"
+                onChange={this.handleChange}
+                value={this.state.Emp_email}
+                minLength={13}
+              />
+            </div>
+               <div className="form-group">
+              <label htmlFor="name">Nominee Name</label>
+              <input
+                type="text"
+                id="name"
+                name="Nom_name"
+                placeholder="enter email"
+                onChange={this.handleChange}
+                value={this.state.Nom_name}
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="ID">Nominee ID</label>
+              <input
+                type="text"
+                id="ID"
+                name="Nom_ID"
+                placeholder="enter ID"
+                onChange={this.handleChange}
+                value={this.state.Nom_ID}
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="email">Email Id</label>
+              <input
+                type="email"
+                id="email"
+                name="Nom_email"
+                placeholder="enter email"
+                onChange={this.handleChange}
+                value={this.state.Nom_email}
+                minLength={13}
               />
             </div>
             <div className="form-group">
@@ -271,18 +333,6 @@ export default class EmployeeForm extends Component {
                 placeholder="enter number"
                 onChange={this.handleChange}
                 value={this.state.Emp_num}
-              />
-            </div>
-            <div className="form-group">
-              <label htmlFor="email">Employee Email Id</label>
-              <input
-                type="email"
-                id="email"
-                name="Emp_email"
-                placeholder="enter email"
-                onChange={this.handleChange}
-                value={this.state.Emp_email}
-                minLength={13}
               />
             </div>
             <div className="form-group">
